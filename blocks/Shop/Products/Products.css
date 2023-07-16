@@ -1,0 +1,81 @@
+.cr-card {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    height: 350px;
+    overflow: hidden;
+    width: 250px;
+  }
+  
+  .cr-card > figure {
+    width: 90%;
+    margin: 20px auto 0 auto;
+  }
+  
+  .cr-card > figure > img {
+    width: 100%;
+  }
+  
+  .cr-card-details {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 10px 30px 10px;
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    transition: box-shadow 0.3s ease-in-out, top 0.3s ease-in-out;
+  }
+  
+  .cr-card:hover {
+    border: 1px solid #192a56;
+  }
+  
+  .cr-card:hover img {
+    transform: rotate(-20deg);
+  }
+  
+  .cr-card:hover .cr-card-details {
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
+    top: 65%;
+  }
+  
+  .cr-card-details > .cr-card-min-details {
+    margin-bottom: 20px;
+    display: flex;
+    line-height: 1.2rem;
+    justify-content: space-between;
+  }
+  
+  .cr-card-details > .cr-card-min-details > h1 {
+    color: #7b7b7b;
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    max-width: 65%;
+    letter-spacing: 0.2rem;
+  }
+  
+  .cr-card-details > .cr-card-min-details > h1 > span {
+    color: #7b7b7b;
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 700;
+  }
+  
+  .cr-card-details-btn {
+    background-color: #192a56;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 100%;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .cr-card-details-btn:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }

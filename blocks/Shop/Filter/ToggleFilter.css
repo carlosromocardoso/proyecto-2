@@ -1,0 +1,23 @@
+.cr-logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .cr-hamburger-label,
+  .cr-hamburger {
+    display: none;
+  }
+  
+  @media screen and (max-width: 48rem) {
+    .cr-hamburger-label {
+      display: inline-block;
+      color: var(--rc-color-typography-body);
+      font-style: normal;
+      font-size: var(--rc-typography-h1);
+      padding: 0.6rem;
+    }
+    .cr-hamburger:checked ~ .cr-section-nav {
+      display: block;
+      padding: var(--rc-section-padding);
+    }
+  }

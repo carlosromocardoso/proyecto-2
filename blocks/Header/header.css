@@ -1,0 +1,15 @@
+/* HEADER */
+.cr-section-header-layout {
+    justify-content: space-between;
+    margin: 0px 20px 0px 20px;
+    text-transform: uppercase;
+    min-height: 10vh;
+    padding: var(--rc-section-padding);
+  }
+
+
+@media screen and (max-width: 48rem) {
+  .cr-section-header-layout {
+    flex-direction: column;
+  }
+}

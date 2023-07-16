@@ -1,0 +1,26 @@
+/* HERO */
+.cr-section-hero {
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.cr-section-hero--banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 48rem) {
+    .cr-section-hero {
+        height: 20vh;
+        overflow: hidden;
+      }
+    
+      .cr-section-hero--banner {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        object-position: -600px -60px;
+      }
+}
